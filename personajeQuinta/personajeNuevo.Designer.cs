@@ -49,12 +49,24 @@
             this.attTextInt = new attribTextBox.attTextBox();
             this.attTextWis = new attribTextBox.attTextBox();
             this.attTextCha = new attribTextBox.attTextBox();
+            this.cbRaza = new System.Windows.Forms.ComboBox();
+            this.lblRaza = new System.Windows.Forms.Label();
+            this.btnPlusS = new System.Windows.Forms.Button();
+            this.btnPlusW = new System.Windows.Forms.Button();
+            this.btnPlusI = new System.Windows.Forms.Button();
+            this.btnPlusC = new System.Windows.Forms.Button();
+            this.btnPlusD = new System.Windows.Forms.Button();
+            this.btnPlusCh = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 24);
+            this.label1.Location = new System.Drawing.Point(41, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 0;
@@ -63,7 +75,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(43, 56);
+            this.label2.Location = new System.Drawing.Point(41, 75);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 13);
             this.label2.TabIndex = 1;
@@ -72,7 +84,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(42, 84);
+            this.label3.Location = new System.Drawing.Point(40, 103);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 13);
             this.label3.TabIndex = 2;
@@ -81,7 +93,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(43, 114);
+            this.label4.Location = new System.Drawing.Point(41, 133);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(25, 13);
             this.label4.TabIndex = 3;
@@ -90,7 +102,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(42, 144);
+            this.label5.Location = new System.Drawing.Point(40, 163);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(28, 13);
             this.label5.TabIndex = 4;
@@ -99,7 +111,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(43, 172);
+            this.label6.Location = new System.Drawing.Point(41, 191);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(29, 13);
             this.label6.TabIndex = 5;
@@ -108,7 +120,7 @@
             // lblModStr
             // 
             this.lblModStr.AutoSize = true;
-            this.lblModStr.Location = new System.Drawing.Point(143, 24);
+            this.lblModStr.Location = new System.Drawing.Point(141, 43);
             this.lblModStr.Name = "lblModStr";
             this.lblModStr.Size = new System.Drawing.Size(13, 13);
             this.lblModStr.TabIndex = 7;
@@ -118,7 +130,7 @@
             // lblModDex
             // 
             this.lblModDex.AutoSize = true;
-            this.lblModDex.Location = new System.Drawing.Point(143, 56);
+            this.lblModDex.Location = new System.Drawing.Point(141, 75);
             this.lblModDex.Name = "lblModDex";
             this.lblModDex.Size = new System.Drawing.Size(13, 13);
             this.lblModDex.TabIndex = 13;
@@ -127,7 +139,7 @@
             // lblModCon
             // 
             this.lblModCon.AutoSize = true;
-            this.lblModCon.Location = new System.Drawing.Point(143, 82);
+            this.lblModCon.Location = new System.Drawing.Point(141, 101);
             this.lblModCon.Name = "lblModCon";
             this.lblModCon.Size = new System.Drawing.Size(13, 13);
             this.lblModCon.TabIndex = 14;
@@ -136,7 +148,7 @@
             // lblModInt
             // 
             this.lblModInt.AutoSize = true;
-            this.lblModInt.Location = new System.Drawing.Point(143, 114);
+            this.lblModInt.Location = new System.Drawing.Point(141, 133);
             this.lblModInt.Name = "lblModInt";
             this.lblModInt.Size = new System.Drawing.Size(13, 13);
             this.lblModInt.TabIndex = 15;
@@ -145,7 +157,7 @@
             // lblModWis
             // 
             this.lblModWis.AutoSize = true;
-            this.lblModWis.Location = new System.Drawing.Point(143, 151);
+            this.lblModWis.Location = new System.Drawing.Point(141, 170);
             this.lblModWis.Name = "lblModWis";
             this.lblModWis.Size = new System.Drawing.Size(13, 13);
             this.lblModWis.TabIndex = 16;
@@ -154,7 +166,7 @@
             // lblModCha
             // 
             this.lblModCha.AutoSize = true;
-            this.lblModCha.Location = new System.Drawing.Point(143, 179);
+            this.lblModCha.Location = new System.Drawing.Point(141, 198);
             this.lblModCha.Name = "lblModCha";
             this.lblModCha.Size = new System.Drawing.Size(13, 13);
             this.lblModCha.TabIndex = 18;
@@ -162,7 +174,7 @@
             // 
             // btnGenerar
             // 
-            this.btnGenerar.Location = new System.Drawing.Point(69, 214);
+            this.btnGenerar.Location = new System.Drawing.Point(67, 233);
             this.btnGenerar.Name = "btnGenerar";
             this.btnGenerar.Size = new System.Drawing.Size(75, 23);
             this.btnGenerar.TabIndex = 19;
@@ -177,7 +189,7 @@
             // 
             // attTextStr
             // 
-            this.attTextStr.Location = new System.Drawing.Point(91, 24);
+            this.attTextStr.Location = new System.Drawing.Point(89, 43);
             this.attTextStr.Name = "attTextStr";
             this.attTextStr.Num = 0;
             this.attTextStr.Size = new System.Drawing.Size(27, 20);
@@ -186,7 +198,7 @@
             // 
             // attTextDex
             // 
-            this.attTextDex.Location = new System.Drawing.Point(91, 56);
+            this.attTextDex.Location = new System.Drawing.Point(89, 75);
             this.attTextDex.Name = "attTextDex";
             this.attTextDex.Num = 1;
             this.attTextDex.Size = new System.Drawing.Size(27, 20);
@@ -195,7 +207,7 @@
             // 
             // attTextCon
             // 
-            this.attTextCon.Location = new System.Drawing.Point(91, 85);
+            this.attTextCon.Location = new System.Drawing.Point(89, 104);
             this.attTextCon.Name = "attTextCon";
             this.attTextCon.Num = 2;
             this.attTextCon.Size = new System.Drawing.Size(27, 20);
@@ -204,7 +216,7 @@
             // 
             // attTextInt
             // 
-            this.attTextInt.Location = new System.Drawing.Point(91, 111);
+            this.attTextInt.Location = new System.Drawing.Point(89, 130);
             this.attTextInt.Name = "attTextInt";
             this.attTextInt.Num = 3;
             this.attTextInt.Size = new System.Drawing.Size(27, 20);
@@ -213,7 +225,7 @@
             // 
             // attTextWis
             // 
-            this.attTextWis.Location = new System.Drawing.Point(91, 144);
+            this.attTextWis.Location = new System.Drawing.Point(89, 163);
             this.attTextWis.Name = "attTextWis";
             this.attTextWis.Num = 4;
             this.attTextWis.Size = new System.Drawing.Size(27, 20);
@@ -222,18 +234,182 @@
             // 
             // attTextCha
             // 
-            this.attTextCha.Location = new System.Drawing.Point(91, 172);
+            this.attTextCha.Location = new System.Drawing.Point(89, 191);
             this.attTextCha.Name = "attTextCha";
             this.attTextCha.Num = 5;
             this.attTextCha.Size = new System.Drawing.Size(27, 20);
             this.attTextCha.TabIndex = 26;
             this.attTextCha.TextChanged += new System.EventHandler(this.txtAttrib_TextChanged);
             // 
+            // cbRaza
+            // 
+            this.cbRaza.Enabled = false;
+            this.cbRaza.FormattingEnabled = true;
+            this.cbRaza.Items.AddRange(new object[] {
+            "Human",
+            "Human(Variant)",
+            "Elf",
+            "Dragonborn",
+            "Halfling",
+            "Dwarf",
+            "Tiefling",
+            "Half-Orc",
+            "Half-Elf"});
+            this.cbRaza.Location = new System.Drawing.Point(271, 57);
+            this.cbRaza.Name = "cbRaza";
+            this.cbRaza.Size = new System.Drawing.Size(121, 21);
+            this.cbRaza.TabIndex = 27;
+            this.cbRaza.SelectedIndexChanged += new System.EventHandler(this.CbRaza_SelectedIndexChanged);
+            // 
+            // lblRaza
+            // 
+            this.lblRaza.AutoSize = true;
+            this.lblRaza.Location = new System.Drawing.Point(271, 34);
+            this.lblRaza.Name = "lblRaza";
+            this.lblRaza.Size = new System.Drawing.Size(32, 13);
+            this.lblRaza.TabIndex = 28;
+            this.lblRaza.Text = "Raza";
+            // 
+            // btnPlusS
+            // 
+            this.btnPlusS.BackColor = System.Drawing.Color.Transparent;
+            this.btnPlusS.Enabled = false;
+            this.btnPlusS.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnPlusS.Image = global::personajeQuinta.Properties.Resources.icon_plus;
+            this.btnPlusS.Location = new System.Drawing.Point(170, 23);
+            this.btnPlusS.Name = "btnPlusS";
+            this.btnPlusS.Size = new System.Drawing.Size(30, 31);
+            this.btnPlusS.TabIndex = 29;
+            this.btnPlusS.UseVisualStyleBackColor = false;
+            this.btnPlusS.Click += new System.EventHandler(this.btnPlusAttribute_Click);
+            // 
+            // btnPlusW
+            // 
+            this.btnPlusW.BackColor = System.Drawing.Color.Transparent;
+            this.btnPlusW.Enabled = false;
+            this.btnPlusW.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnPlusW.Image = global::personajeQuinta.Properties.Resources.icon_plus;
+            this.btnPlusW.Location = new System.Drawing.Point(170, 163);
+            this.btnPlusW.Name = "btnPlusW";
+            this.btnPlusW.Size = new System.Drawing.Size(30, 31);
+            this.btnPlusW.TabIndex = 30;
+            this.btnPlusW.UseVisualStyleBackColor = false;
+            this.btnPlusW.Click += new System.EventHandler(this.btnPlusAttribute_Click);
+            // 
+            // btnPlusI
+            // 
+            this.btnPlusI.BackColor = System.Drawing.Color.Transparent;
+            this.btnPlusI.Enabled = false;
+            this.btnPlusI.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnPlusI.Image = global::personajeQuinta.Properties.Resources.icon_plus;
+            this.btnPlusI.Location = new System.Drawing.Point(170, 126);
+            this.btnPlusI.Name = "btnPlusI";
+            this.btnPlusI.Size = new System.Drawing.Size(30, 31);
+            this.btnPlusI.TabIndex = 31;
+            this.btnPlusI.UseVisualStyleBackColor = false;
+            this.btnPlusI.Click += new System.EventHandler(this.btnPlusAttribute_Click);
+            // 
+            // btnPlusC
+            // 
+            this.btnPlusC.BackColor = System.Drawing.Color.Transparent;
+            this.btnPlusC.Enabled = false;
+            this.btnPlusC.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnPlusC.Image = global::personajeQuinta.Properties.Resources.icon_plus;
+            this.btnPlusC.Location = new System.Drawing.Point(170, 89);
+            this.btnPlusC.Name = "btnPlusC";
+            this.btnPlusC.Size = new System.Drawing.Size(30, 31);
+            this.btnPlusC.TabIndex = 32;
+            this.btnPlusC.UseVisualStyleBackColor = false;
+            this.btnPlusC.Click += new System.EventHandler(this.btnPlusAttribute_Click);
+            // 
+            // btnPlusD
+            // 
+            this.btnPlusD.BackColor = System.Drawing.Color.Transparent;
+            this.btnPlusD.Enabled = false;
+            this.btnPlusD.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnPlusD.Image = global::personajeQuinta.Properties.Resources.icon_plus;
+            this.btnPlusD.Location = new System.Drawing.Point(170, 57);
+            this.btnPlusD.Name = "btnPlusD";
+            this.btnPlusD.Size = new System.Drawing.Size(30, 31);
+            this.btnPlusD.TabIndex = 33;
+            this.btnPlusD.UseVisualStyleBackColor = false;
+            this.btnPlusD.Click += new System.EventHandler(this.btnPlusAttribute_Click);
+            // 
+            // btnPlusCh
+            // 
+            this.btnPlusCh.BackColor = System.Drawing.Color.Transparent;
+            this.btnPlusCh.Enabled = false;
+            this.btnPlusCh.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnPlusCh.Image = global::personajeQuinta.Properties.Resources.icon_plus;
+            this.btnPlusCh.Location = new System.Drawing.Point(170, 198);
+            this.btnPlusCh.Name = "btnPlusCh";
+            this.btnPlusCh.Size = new System.Drawing.Size(30, 31);
+            this.btnPlusCh.TabIndex = 34;
+            this.btnPlusCh.UseVisualStyleBackColor = false;
+            this.btnPlusCh.Click += new System.EventHandler(this.btnPlusAttribute_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Items.AddRange(new object[] {
+            "uno",
+            "dos",
+            "tres",
+            "cuatro",
+            "cinco ",
+            "seis",
+            "siete",
+            "ocho",
+            "nueve",
+            "dies ",
+            "once ",
+            "doce",
+            "trece"});
+            this.listBox1.Location = new System.Drawing.Point(446, 36);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 95);
+            this.listBox1.TabIndex = 35;
+            this.toolTip1.SetToolTip(this.listBox1, "ACA VA LA LISTA DE TUS PROFICIENCIAS\r\n");
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(443, 13);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(133, 13);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "Proficiencias y Habilidades";
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.AutoPopDelay = 5000;
+            this.toolTip1.InitialDelay = 0;
+            this.toolTip1.ReshowDelay = 100;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(572, 36);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 95);
+            this.textBox1.TabIndex = 37;
+            // 
             // personajeNuevo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.btnPlusCh);
+            this.Controls.Add(this.btnPlusD);
+            this.Controls.Add(this.btnPlusC);
+            this.Controls.Add(this.btnPlusI);
+            this.Controls.Add(this.btnPlusW);
+            this.Controls.Add(this.btnPlusS);
+            this.Controls.Add(this.lblRaza);
+            this.Controls.Add(this.cbRaza);
             this.Controls.Add(this.attTextCha);
             this.Controls.Add(this.attTextWis);
             this.Controls.Add(this.attTextInt);
@@ -282,5 +458,17 @@
         private attribTextBox.attTextBox attTextInt;
         private attribTextBox.attTextBox attTextWis;
         private attribTextBox.attTextBox attTextCha;
+        private System.Windows.Forms.ComboBox cbRaza;
+        private System.Windows.Forms.Label lblRaza;
+        private System.Windows.Forms.Button btnPlusS;
+        private System.Windows.Forms.Button btnPlusW;
+        private System.Windows.Forms.Button btnPlusI;
+        private System.Windows.Forms.Button btnPlusC;
+        private System.Windows.Forms.Button btnPlusD;
+        private System.Windows.Forms.Button btnPlusCh;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

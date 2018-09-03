@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//Version 0.0.1
 namespace personajeQuinta
 {
     public partial class ventanaPrincipal : Form
